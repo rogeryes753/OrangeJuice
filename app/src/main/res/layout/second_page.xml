@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/areaA"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="#20b2aa"
+        android:text="A"
+        android:textSize="15sp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/areaB"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="#20b2aa"
+        android:text="B"
+        android:textSize="15sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#ff7f50"
+        app:layout_constraintStart_toEndOf="@id/areaA"
+        app:layout_constraintEnd_toStartOf="@id/areaB"
+        app:layout_constraintTop_toBottomOf="@id/areaA"
+        app:layout_constraintBottom_toTopOf="@id/areaB"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tempData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dkldkld\nddddd\n24"
+            android:gravity="start"/>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
